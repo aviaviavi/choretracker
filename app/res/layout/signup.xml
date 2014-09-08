@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:focusable="true">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/signUpTitle" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp" android:textSize="36dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name:"
+            android:id="@+id/userNameLabel"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="58dp"
+            android:layout_centerVertical="true" android:paddingRight="40dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameInput"
+            android:textSize="12dp" android:textColor="@color/grey" android:minWidth="150dp" android:maxWidth="150dp"
+            android:layout_alignParentLeft="false" android:layout_marginRight="58dp"
+            android:layout_alignBaseline="@+id/userNameLabel"
+            android:gravity="center_horizontal" android:layout_alignParentRight="true"
+            android:hint="Enter a user name"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/signUpButton"
+            android:layout_alignLeft="@+id/userNameInput" android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="75dp"/>
+</RelativeLayout>

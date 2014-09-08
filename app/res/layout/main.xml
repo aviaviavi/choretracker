@@ -7,6 +7,10 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="Welcome to Chore Tracker!"
             android:id="@+id/mainTextView"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/choreList" android:layout_gravity="center"/>
 </LinearLayout>

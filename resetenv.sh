@@ -2,5 +2,5 @@
 
 rm -rf env
 virtualenv env
-. env/bin/activate
+source env/bin/activate
 pip install bottle
