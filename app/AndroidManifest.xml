@@ -6,7 +6,7 @@
     <uses-sdk android:minSdkVersion="18"/>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".ChoreTrackerApp">
         <activity android:name="Home"
                   android:label="@string/app_name">
             <intent-filter>
@@ -15,5 +15,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUp"/>
+        <activity android:name=".JoinGroupActivity"/>
+        <activity android:name=".GetChoresActivity"/>
     </application>
 </manifest>

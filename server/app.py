@@ -49,7 +49,7 @@ def join_group():
         group_name = request.params['group_name'] 
         conn.execute("update user set group_name = '%s' where phone_number = %s;" % (group_name, number))
         conn.commit()
-        return SUCCESS 
+        result = SUCCESS 
     except Exception as e:
         return failure(e)
 

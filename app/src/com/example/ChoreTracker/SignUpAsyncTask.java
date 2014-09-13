@@ -4,19 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.EditText;
+import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-/**
- * Created with IntelliJ IDEA.
- * User: avi
- * Date: 9/7/14
- * Time: 9:57 PM
- * To change this template use File | Settings | File Templates.
- */
 public class SignUpAsyncTask extends AsyncTask<ApiCallBuilder, Void, Void> {
 
     private Activity activity;
@@ -28,17 +22,15 @@ public class SignUpAsyncTask extends AsyncTask<ApiCallBuilder, Void, Void> {
     @Override
     protected Void doInBackground(ApiCallBuilder... apiCallBuilders) {
         try {
-            EditText input = (EditText) activity.findViewById(R.id.userNameInput);
             JSONObject response = apiCallBuilders[0].sendCall();
             boolean success = response.getBoolean("success");
             if (!success) {
-                input.setError("User name taken!");
+                ;
             } else {
                 // go to join group view
                 Intent joinGroupIntent = new Intent(activity, JoinGroupActivity.class);
-                joinGroupIntent.putExtra("user_name", activity.getIntent().getStringExtra("user_name"));
-                joinGroupIntent.putExtra("group_name", "");
-                joinGroupIntent.putExtra("phone_number", activity.getIntent().getStringExtra("phone_number"));
+                String userName = apiCallBuilders[0].getParams().get("user_name");
+                ((ChoreTrackerApp) activity.getApplication()).setUserName(userName);
                 activity.startActivity(joinGroupIntent);
                 activity.finish();
             }
@@ -48,7 +40,19 @@ public class SignUpAsyncTask extends AsyncTask<ApiCallBuilder, Void, Void> {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (JSONException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            runOnUi();
         }
         return null;
     }
+
+    private void runOnUi() {
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                EditText input = (EditText) activity.findViewById(R.id.userNameInput);
+                input.setError("User name taken (or possible server error).");
+            }
+        });
+    }
+
 }

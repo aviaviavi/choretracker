@@ -14,21 +14,18 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Hashtable;
 
-/**
- * Created with IntelliJ IDEA.
- * User: avi
- * Date: 9/7/14
- * Time: 9:09 PM
- * To change this template use File | Settings | File Templates.
- */
 public class ApiCallBuilder {
 
     private Hashtable<String, String> params;
     private String address = "http://10.0.3.2:8080/";
     private String function;
-    private StringBuilder url = new StringBuilder();
+    private StringBuilder url;
+    private String phoneNumber;
+    private String userName;
 
-    public ApiCallBuilder (String func, Hashtable<String, String> params) {
+    public ApiCallBuilder (String func, Hashtable<String, String> paramIn) {
+        params = paramIn;
+        url = new StringBuilder();
         function = func;
         url.append(address);
         url.append(function);
@@ -56,5 +53,7 @@ public class ApiCallBuilder {
         return json;
     }
 
-
+    public Hashtable<String, String> getParams() {
+        return params;
+    }
 }

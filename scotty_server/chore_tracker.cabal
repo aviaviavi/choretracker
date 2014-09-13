@@ -1,0 +1,28 @@
+name:                chore 
+version:             0.0.1
+synopsis:            Chore tracker 
+category:            Web
+build-type:          Simple
+
+executable test 
+  main-is:             test.hs
+  -- other-modules:       
+  build-depends:       base
+                     , wai
+                     , warp
+                     , http-types
+                     , resourcet
+                     , scotty
+                     , text
+                     , bytestring
+                     , blaze-html
+                     , persistent
+                     , persistent-template
+                     , persistent-sqlite
+                     , persistent-postgresql
+                     , monad-logger
+                     , heroku
+                     , transformers
+                     , wai-middleware-static
+                     , wai-extra
+                     , time

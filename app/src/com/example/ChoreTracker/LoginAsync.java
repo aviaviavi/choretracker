@@ -21,13 +21,6 @@ import java.net.URISyntaxException;
 import java.util.Hashtable;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: avi
- * Date: 9/7/14
- * Time: 3:26 PM
- * To change this template use File | Settings | File Templates.
- */
 public class LoginAsync extends AsyncTask<String, Void, JSONObject> {
 
     private Activity activity;
@@ -54,11 +47,22 @@ public class LoginAsync extends AsyncTask<String, Void, JSONObject> {
                 activity.startActivity(signUp);
                 activity.finish();
             } else {
+                ((ChoreTrackerApp) activity.getApplication()).setUserName(userName);
                 String groupName = json.getString("group_name");
-                JSONArray chores = json.getJSONArray("chores");
-                TextView tv = (TextView) activity.findViewById(R.id.mainTextView);
-                tv.setText("Logged in as " + userName + " in group " + groupName);
-                ListView choreList = (ListView) activity.findViewById(R.id.choreList);
+                if (groupName.equals("null")) {
+                    Intent joinGroupIntent = new Intent(activity, JoinGroupActivity.class);
+                    joinGroupIntent.putExtra("user_name", activity.getIntent().getStringExtra("user_name"));
+                    joinGroupIntent.putExtra("group_name", "");
+                    joinGroupIntent.putExtra("phone_number", activity.getIntent().getStringExtra("phone_number"));
+                    activity.startActivity(joinGroupIntent);
+                    activity.finish();
+                } else {
+                    JSONArray chores = json.getJSONArray("chores");
+                    Intent choresIntent = new Intent(activity, GetChoresActivity.class);
+                    choresIntent.putExtra("json", chores.toString());
+                    activity.startActivity(choresIntent);
+                    activity.finish();
+                }
             }
         } catch (JSONException e) {
             throw new RuntimeException("caught error parsing JSON");

@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7c2feb1-8454-43bb-be86-c8a846151512" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/data/db.db-journal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/RegisterUserAsync.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/ApiCallBuilder.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/ApiCallBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/ApiCallBuilder.java" afterPath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/ApiCallBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/Home.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/Home.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/Home.java" afterPath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/Home.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/JoinGroupActivity.java" afterPath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/JoinGroupActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/LoginAsync.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/LoginAsync.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/LoginAsync.java" afterPath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/LoginAsync.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$id.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$layout.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$string.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/SignUp$1.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/SignUp$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/SignUp.class" afterPath="$PROJECT_DIR$/app/out/production/app/com/example/ChoreTracker/SignUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/SignUpAsyncTask.java" afterPath="$PROJECT_DIR$/app/src/com/example/ChoreTracker/SignUpAsyncTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/app.apk" afterPath="$PROJECT_DIR$/app/out/production/app/app.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/out/production/app/app.unaligned.apk" afterPath="$PROJECT_DIR$/app/out/production/app/app.unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/data/db.db" afterPath="$PROJECT_DIR$/server/data/db.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.py" afterPath="$PROJECT_DIR$/server/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resetenv.sh" afterPath="$PROJECT_DIR$/resetenv.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/res/layout/join_group_activity.xml" afterPath="$PROJECT_DIR$/app/res/layout/join_group_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/app/.idea/workspace.xml" />
     </list>
     <ignored path="ChoreTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +48,7 @@
       <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="114" selection-end="114" vertical-scroll-proportion="0.12349914" vertical-offset="0" max-vertical-offset="1926">
+            <state line="4" column="14" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1926">
               <folding />
             </state>
           </provider>
@@ -40,7 +57,7 @@
       <file leaf-file-name="resetenv.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resetenv.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="5" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+            <state line="4" column="5" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
               <folding />
             </state>
           </provider>
@@ -49,7 +66,7 @@
       <file leaf-file-name="schema.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/data/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="11" column="35" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -356,9 +373,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -373,6 +389,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.6712963" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -396,6 +413,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/app.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resetenv.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/data/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="14" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1656">
           <folding />
         </state>
@@ -403,23 +441,17 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="-2.4089553" vertical-offset="20175" max-vertical-offset="26496">
-          <folding />
-        </state>
+        <state line="1142" column="0" selection-start="47510" selection-end="47510" vertical-scroll-proportion="-2.4089553" vertical-offset="20175" max-vertical-offset="26496" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env/lib/python2.7/site-packages/bottle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="978" column="0" selection-start="39703" selection-end="39703" vertical-scroll-proportion="0.19397993" vertical-offset="17488" max-vertical-offset="67284">
-          <folding />
-        </state>
+        <state line="978" column="0" selection-start="39703" selection-end="39703" vertical-scroll-proportion="0.19397993" vertical-offset="17488" max-vertical-offset="67284" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/wsgiref/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.19397993" vertical-offset="1324" max-vertical-offset="8136">
-          <folding />
-        </state>
+        <state line="84" column="0" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.19397993" vertical-offset="1324" max-vertical-offset="8136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/data/schema.sql">
@@ -438,7 +470,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="114" selection-end="114" vertical-scroll-proportion="0.12349914" vertical-offset="0" max-vertical-offset="1926">
+        <state line="4" column="14" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1926">
           <folding />
         </state>
       </provider>

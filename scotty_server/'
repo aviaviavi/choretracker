@@ -1,0 +1,12 @@
+{-# LANGUAGE OverloadedStrings #-}
+import Web.Scotty
+
+data Success = Success {success :: Bool} deriving(Show,Generic)
+
+instance FromJSON Successs
+instance toJSON Successs
+
+main = scotty 3000 $ do
+  get "/" $ do
+    json $ Success True 
+
