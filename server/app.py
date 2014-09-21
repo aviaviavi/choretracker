@@ -7,7 +7,7 @@ import datetime
 from bottle import default_app
 
 conn = sqlite3.connect("data/db.db")
-APP_VERSION = 1.2
+APP_VERSION = 1.3
 
 SUCCESS = {'success': True}
 FAILURE = {'success': False}

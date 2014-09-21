@@ -18,7 +18,7 @@ import java.util.Hashtable;
 public class ApiCallBuilder {
 
     private Hashtable<String, String> params;
-    private String address = "http://192.168.1.253:8080"; // "http://192.168.1.253";
+    private String address = "http://192.168.1.66:8080"; // "http://192.168.1.253";
     private String function;
 
     public ApiCallBuilder (String func, Hashtable<String, String> paramIn) {

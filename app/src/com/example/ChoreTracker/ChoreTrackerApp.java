@@ -10,7 +10,7 @@ public class ChoreTrackerApp extends Application {
     private String userName;
     private String phoneNumber;
     private String groupName;
-    public double VERSION = 1.2;
+    public double VERSION = 1.3;
 
     public String getUserName() {
         return userName;
