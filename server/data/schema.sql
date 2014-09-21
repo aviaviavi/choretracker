@@ -6,7 +6,7 @@ CREATE TABLE user (
 
 CREATE TABLE chore (
     chore_name        TEXT NOT NULL,
-    description       TEXT NOT NULL,
+    description       TEXT,
     group_name        TEXT NOT NULL,
     user_name         TEXT NOT NULL,
     day_of_week       INTEGER NOT NULL,

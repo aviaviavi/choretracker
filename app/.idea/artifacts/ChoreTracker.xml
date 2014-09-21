@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="ChoreTracker">
+    <output-path>$PROJECT_DIR$/../server/static</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="includeSystemProGuardCfgFile" value="true" />
+        <option name="keyAlias" value="keystore" />
+        <option name="keyPassword" value="Z2hvc3RkYWQ=" />
+        <option name="keyStorePassword" value="Z2hvc3RkYWQ=" />
+        <option name="keyStoreUrl" value="file://$PROJECT_DIR$/../server/static/keystore" />
+        <option name="proGuardCfgFileUrl" value="file://$PROJECT_DIR$/proguard-project.txt" />
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="ChoreTracker.apk">
+      <element id="android-final-package" facet="app/android/Android" />
+    </root>
+  </artifact>
+</component>

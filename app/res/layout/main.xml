@@ -7,6 +7,6 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Chore Tracker!"
+            android:text="Welcome to Chore Tracker! Waiting for server response."
             android:id="@+id/mainTextView"/>
 </LinearLayout>

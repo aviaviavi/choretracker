@@ -1,5 +1,6 @@
 package com.example.ChoreTracker;
 
+import android.net.Uri;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -17,26 +18,32 @@ import java.util.Hashtable;
 public class ApiCallBuilder {
 
     private Hashtable<String, String> params;
-    private String address = "http://10.0.3.2:8080/";
+    private String address = "http://192.168.1.253:8080"; // "http://192.168.1.253";
     private String function;
-    private StringBuilder url;
-    private String phoneNumber;
-    private String userName;
 
     public ApiCallBuilder (String func, Hashtable<String, String> paramIn) {
         params = paramIn;
-        url = new StringBuilder();
         function = func;
-        url.append(address);
-        url.append(function);
-        url.append("?");
-        for (String key : params.keySet()) {
-            url.append(key + "=" + params.get(key) + "&");
+    }
+
+    public ApiCallBuilder (String func) {
+        params = new Hashtable<String, String>();
+        function = func;
+    }
+
+    public void putParam(String key, String val) {
+        if (val != null) {
+            params.put(key, val);
         }
     }
 
     public String getUrl() {
-        return url.toString();
+        Uri.Builder builder = Uri.parse(address).buildUpon();
+        builder.path(function);
+        for (String key : getParams().keySet()) {
+            builder.appendQueryParameter(key, getParams().get(key));
+        }
+        return builder.toString();
     }
 
     public JSONObject sendCall() throws URISyntaxException, IOException, JSONException {

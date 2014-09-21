@@ -1,7 +1,11 @@
 package com.example.ChoreTracker;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -40,6 +44,9 @@ public class LoginAsync extends AsyncTask<String, Void, JSONObject> {
     protected void onPostExecute(JSONObject json) {
         try {
             super.onPostExecute(json);
+
+            double newestAppVersion = json.getDouble("version");
+
             String userName = json.getString("user_name");
             if (userName == "null") {
                 Intent signUp = new Intent(activity, SignUp.class);
@@ -58,8 +65,10 @@ public class LoginAsync extends AsyncTask<String, Void, JSONObject> {
                     activity.finish();
                 } else {
                     JSONArray chores = json.getJSONArray("chores");
+                    ((ChoreTrackerApp) activity.getApplication()).setGroupName(groupName);
                     Intent choresIntent = new Intent(activity, GetChoresActivity.class);
                     choresIntent.putExtra("json", chores.toString());
+                    choresIntent.putExtra("newest_version", newestAppVersion);
                     activity.startActivity(choresIntent);
                     activity.finish();
                 }
@@ -73,7 +82,7 @@ public class LoginAsync extends AsyncTask<String, Void, JSONObject> {
         Hashtable<String, String> params = new Hashtable<String, String>();
         params.put("phone_number", phoneNumber);
         try {
-            return new ApiCallBuilder("", params).sendCall();
+            return new ApiCallBuilder("/", params).sendCall();
         } catch (URISyntaxException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:baselineAligned="false">
+
+    <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/inputChoreName" android:layout_gravity="center|left" android:minWidth="130dp"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:hint="Chore Name"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+    <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/assignToSpinner" android:layout_gravity="left|center_vertical" android:prompt="@string/assignToSpinner"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:spinnerMode="dropdown" android:minWidth="130dp"/>
+    <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/dayOfWeekSpinner" android:layout_gravity="left|center_vertical"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:spinnerMode="dropdown" android:prompt="@string/spinnerDay" android:minWidth="130dp"/>
+    <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Repeat"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:minWidth="130dp"
+            android:checked="true"
+            android:id="@+id/repeatCheckBox" android:layout_gravity="left|center_vertical"
+            android:visibility="invisible"/>
+</LinearLayout>

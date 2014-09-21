@@ -29,7 +29,7 @@ public class SignUp extends Activity {
                 if (input != null && input.length() >= 3) {
                     new SignUpAsyncTask(SignUp.this).execute(new ApiCallBuilder("create_user", params));
                 } else {
-                    input.setError("User name too short!");
+                    input.setError("User names must be > 2 characters.");
                 }
             }
         });

@@ -40,7 +40,7 @@ public class GetJoinableGroupsAsync extends AsyncTask<Void, Void, Void> {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-                builder.setMessage("Are you sure?").setPositiveButton("Yes", dialogClickListener)
+                builder.setMessage("Join this group?").setPositiveButton("Yes", dialogClickListener)
                         .setNegativeButton("No", dialogClickListener).show();
                 GetJoinableGroupsAsync.this.setSelectedRow(i);
             }
@@ -53,11 +53,11 @@ public class GetJoinableGroupsAsync extends AsyncTask<Void, Void, Void> {
             populateGroupApapter();
             return null;
         } catch (URISyntaxException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         } catch (JSONException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         throw new RuntimeException("caught error getting group names");
     }
@@ -69,14 +69,8 @@ public class GetJoinableGroupsAsync extends AsyncTask<Void, Void, Void> {
                 case DialogInterface.BUTTON_POSITIVE:
                     ListView lv = (ListView) activity.findViewById(R.id.groupListView);
                     String groupName = (String) lv.getAdapter().getItem(getSelectedRow());
-                    String userName = ((ChoreTrackerApp) activity.getApplication()).getUserName();
-                    String phoneNumber = ((ChoreTrackerApp) activity.getApplication()).getPhoneNumber();
-                    Hashtable<String,String> params = new Hashtable<String, String>();
-                    // TODO: put this inside every apicallbuilder
-                    params.put("group_name", groupName);
-                    params.put("user_name", userName);
-                    params.put("phone_number", phoneNumber);
-                    ApiCallBuilder api = new ApiCallBuilder("join_group", params);
+                    ((ChoreTrackerApp) activity.getApplication()).setGroupName(groupName);
+                    ApiCallBuilder api = ((ChoreTrackerApp) activity.getApplication()).defaultApi("join_group");
                     joinGroup(api);
                 case DialogInterface.BUTTON_NEGATIVE:
                     //No button clicked

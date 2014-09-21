@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ChoreTracker</string>
+    <string name="repeat">Repeat</string>
+    <string name="assignToSpinner">Assign To</string>
+    <string name="spinnerDay">Day</string>
+    <string name="choreDialogTitle">Chore name</string>
 </resources>
